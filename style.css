@@ -1,0 +1,111 @@
+/*---------Button---------*/
+.btn-space{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#btn{
+  background-color: black;
+  color: whitesmoke;
+  width: 100px;
+  height: 50px;
+  font-size: medium;
+  border-radius: 10px;
+  box-shadow: 2px 3px 8px 2px grey;
+}
+
+
+/*---------Loader---------*/
+.loader {
+  border: 8px solid lightgrey;
+  border-radius: 50%;
+  border-top: 8px solid black;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/*---------Common Stylings---------*/
+#post-place,#product-place,#todo-place{
+  text-align: center;
+  margin: 15px 0px;
+  margin-bottom: 100px;
+}
+.post-heading,.product-heading,.todo-heading{
+  text-decoration: underline;
+  margin-bottom: 45px;
+}
+
+/*---------POSTS---------*/
+.post-box{
+  border: 1px solid black;
+  background-color: lightblue;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 20px 20px;
+}
+
+/*---------PRODUCTS OR STORE---------*/
+.product-area{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  row-gap: 40px;
+}
+.image{
+  width: 350px;
+  height: 300px;
+}
+.box{
+  border: 1px solid black;
+}
+.bottom-box{
+  padding-left:10px;
+}
+.tag{
+  text-align: start;
+}
+.details{
+  font-weight: bold;
+}
+
+
+/*---------Table designing TODO---------*/
+.todo-area{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto ;
+  border: 1px solid grey;
+  border-collapse: collapse;
+  border-spacing: 150px 20px;
+  background-color: whitesmoke;
+}
+td{
+  padding: 10px;
+  font-size: large;
+  border: 1px solid black;
+}
+
+.table-heading{
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+
+/*---------Additional classes for extra Stylings---------*/
+.done{
+  background-color: lightgreen;
+}
+.not-done{
+  background-color: lightcoral;
+}
+.hide{
+  display:none;
+}
